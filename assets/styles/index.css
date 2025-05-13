@@ -1,31 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;   
-  font-family: poppins, sans-serif
+  box-sizing: border-box;
 }
-
-html {
-  overflow: hidden;
-}
-body {
-  background-color:gradient(to right, #00c6ff, #0072ff);   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;  
-  height: 100vh;
-  overflow: hidden;
-}
-main{
-    color: #852020;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-nav {
-  position: sticky;
-  width: 100%;
-  height: 10vh;
   
+nav{
+  background: linear-gradient(to right, #f7f5f3, #c1a56c);
+  padding: 20px;
+  text-align: right;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; 
+}
+nav a{
+  color: #e8e2d4;
+  text-decoration: none;
+  margin: 0 15px; 
+  border: #533c1e 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: #533c1e 0px 0px 5px;
+  background-color:  rgba(129, 83, 19, 0.5);
+}
+body{
+  background-color: #fffefe;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px; 
+}
+.title{
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.img{
+ position: absolute;  
+ align-items: right;
+  top: 4rem;
+  right: 4rem;
+  width: 20%;
+  border-radius: 50%;
+  border: 5px solid #c1a56c;
+ 
 }
