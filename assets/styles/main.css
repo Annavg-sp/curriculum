@@ -1,235 +1,270 @@
+/* Definición de variables globales para colores y fuentes */
 :root {
-  --primary-color: #f3f3f3;
-  --secondary-color: #77c0a0;
-  --background-color: #436169;
-  --fondo: #527078;
-  --fuente-principal: "Share Tech";
+  --primary-color: #f3f3f3; /* Color principal utilizado para texto y elementos destacados */
+  --secondary-color: #77c0a0; /* Color secundario utilizado en enlaces, bordes, etc. */
+  --background-color: #436169; /* Color de fondo principal */
+  --fondo: #527078; /* Color para fondos adicionales */
+  --fuente-principal: "Share Tech"; /* Fuente principal utilizada */
 }
 
+/* Comportamiento de desplazamiento suave para todo el documento */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Permite desplazamiento suave en el documento */
 }
 
+/* Estilos generales para el body */
 body {
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100dvh;
+  background-color: var(--background-color); /* Fondo utilizando la variable definida */
+  display: flex; /* Usa flexbox para distribuir los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  flex-direction: column; /* Los elementos se distribuyen en columna */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  min-height: 100dvh; /* Asegura que el body ocupe al menos el 100% de la altura visible */
 }
 
+/* Estilos para el header */
 header {
-  width: 100%;
+  width: 100%; /* El header ocupa todo el ancho de la pantalla */
+  
+  /* Estilos para la navegación dentro del header */
   nav {
-    padding: 1rem 0;
-    font-family: sha;
-    font-size: 18px;
+    padding: 1rem 0; /* Relleno vertical de la navegación */
+    font-family: sha; /* Fuente personalizada para la navegación */
+    font-size: 18px; /* Tamaño de fuente para los elementos de navegación */
 
     ul {
-      list-style: none;
-      font-family: "Share Tech", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
-      font-size: x-large;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: right;
-      flex-flow: row wrap;
-      align-items: flex-end;
-      gap: 0.5rem;
+      list-style: none; /* Elimina las viñetas de la lista */
+      font-family: "Share Tech", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fuentes para los elementos del menú */
+      font-size: x-large; /* Tamaño grande de fuente para los elementos */
+      margin: 0; /* Elimina márgenes */
+      padding: 0; /* Elimina padding */
+      display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+      justify-content: right; /* Alinea los elementos a la derecha */
+      flex-flow: row wrap; /* Los elementos se organizan en fila y se ajustan */
+      align-items: flex-end; /* Los elementos se alinean al final del eje vertical */
+      gap: 0.5rem; /* Espacio entre los elementos */
     }
 
+    /* Estilos para los enlaces dentro de la navegación */
     a {
-      color: var(--primary-color);
-      text-decoration: none;
-      border: var(--secondary-color) 1px solid;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background-color: var(--background-color);
-      display: flex;
-      align-items: right;
-      transition: all 0.3s ease-in-out;
-
+      color: var(--primary-color); /* Color del texto de los enlaces */
+      text-decoration: none; /* Elimina el subrayado de los enlaces */
+      border: var(--secondary-color) 1px solid; /* Borde alrededor de los enlaces */
+      padding: 10px 20px; /* Relleno interno de los enlaces */
+      border-radius: 5px; /* Bordes redondeados */
+      background-color: var(--background-color); /* Fondo de los enlaces */
+      display: flex; /* Usa flexbox dentro del enlace */
+      align-items: right; /* Alinea el texto a la derecha dentro del enlace */
+      transition: all 0.3s ease-in-out; /* Transición suave para los cambios de estilo */
+      
+      /* Efecto de hover (cuando se pasa el ratón por encima) */
       &:hover {
-        color: var(--secondary-color);
+        color: var(--secondary-color); /* Cambia el color del texto */
       }
     }
   }
 }
 
+/* Estilos para el footer */
 footer {
   p {
-    margin: 0;
-    color: var(--primary-color);
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    margin: 0; /* Elimina el margen del párrafo */
+    color: var(--primary-color); /* Color del texto */
+    font-family: "Inter", Arial, Helvetica, sans-serif; /* Fuente para el texto */
+    
+    /* Estilos para el texto dentro de la etiqueta <strong> */
     strong {
-      color: var(--secondary-color);
+      color: var(--secondary-color); /* Color del texto en negrita */
     }
   }
 }
 
+/* Estilos para el contenido principal (main) */
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  color: var(--primary-color);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  gap: 1rem;
-  padding-bottom: 30px;
+  display: flex; /* Flexbox para alinear los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  padding: 10px; /* Espaciado interno */
+  color: var(--primary-color); /* Color del texto */
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fuente para el contenido */
+  gap: 1rem; /* Espacio entre los elementos */
+  padding-bottom: 30px; /* Espaciado inferior */
 }
 
+/* Estilos para la clase .main-index */
 .main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  color: var(--primary-color);
-  font-family: "Arial", sans-serif;
+  display: flex; /* Flexbox para organizar los elementos */
+  flex-direction: column; /* Los elementos se distribuyen en columna */
+  align-items: center; /* Centra los elementos */
+  justify-content: center; /* Centra los elementos */
+  padding: 5px; /* Relleno interno */
+  color: var(--primary-color); /* Color del texto */
+  font-family: "Arial", sans-serif; /* Fuente para el contenido */
 
+  /* Estilos para la clase .info dentro de .main-index */
   .info {
-    display: flex;
-    background-color: var(--fondo);
-    border-radius: 50px;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    width: 30vw;
-
+    display: flex; /* Flexbox para organizar los elementos */
+    background-color: var(--fondo); /* Fondo con el color definido */
+    border-radius: 50px; /* Bordes redondeados */
+    flex-direction: column; /* Los elementos se colocan en columna */
+    align-items: center; /* Centra los elementos */
+    padding: 1em; /* Relleno interno */
+    width: 30vw; /* Ancho del 30% de la ventana */
+    
+    /* Estilos para el título dentro de .info */
     h2 {
-      font-family: "Share Tech", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
-      font-size: 50px;
-      margin: 30px;
-      order: 2;
+      font-family: "Share Tech", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fuente para el título */
+      font-size: 50px; /* Tamaño de fuente */
+      margin: 30px; /* Márgenes alrededor */
+      order: 2; /* Orden de los elementos */
     }
+    
+    /* Estilos para las imágenes dentro de .info */
     img {
-      width: 50%;
-      border-radius: 50%;
-      border: 5px solid #77c0a0;
-      object-fit: cover;
-      order: 1;
+      width: 50%; /* Ancho de la imagen */
+      border-radius: 50%; /* Hace la imagen circular */
+      border: 5px solid #77c0a0; /* Borde alrededor de la imagen */
+      object-fit: cover; /* Asegura que la imagen cubra el área */
+      order: 1; /* Orden de la imagen */
     }
+    
+    /* Estilos para los párrafos dentro de .info */
     p {
-      order: 3;
-      font-size: 20px;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
+      order: 3; /* Orden del párrafo */
+      font-size: 20px; /* Tamaño de la fuente */
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fuente */
     }
   }
 }
 
+/* Estilos para la clase .main-expe */
 .main-expe {
-  background-color: var(--fondo);
-  font-family: "Inter";
-  border-radius: 10px;
+  background-color: var(--fondo); /* Fondo personalizado */
+  font-family: "Inter"; /* Fuente */
+  border-radius: 10px; /* Bordes redondeados */
 
+  /* Estilos para el título dentro de .main-expe */
   h2 {
-    margin: 0px;
+    margin: 0px; /* Elimina márgenes */
   }
 
   section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    display: flex; /* Flexbox para organizar los elementos */
+    flex-direction: column; /* Los elementos se organizan en columna */
+    align-items: center; /* Centra los elementos */
+    gap: 1rem; /* Espacio entre los elementos */
 
+    /* Estilos para las listas dentro de section */
     ul {
-      list-style: none;
-      padding: 0px;
-      font-size: 20px; 
-    a {
-      text-decoration: none;
-      color: var(--secondary-color);
+      list-style: none; /* Elimina las viñetas */
+      padding: 0px; /* Elimina el padding */
+      font-size: 20px; /* Tamaño de la fuente */
+      
+      /* Estilos para los enlaces dentro de las listas */
+      a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: var(--secondary-color); /* Color de los enlaces */
       }
     }
-  } 
-  
-  article {
-    border-radius: 10px;
-    background-color: #06605f;
-    padding: 10px;
-    text-align: center;
-    width: 95%;
-
-	ul{
-		font-size: medium;
-
-	}
   }
-}
-
-.title {
-  font-family: "Share Tech", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: var(--primary-color);
-  margin: 0;
-}
-
-.btn {
-  background-color: var(--primary-color);
-  text-decoration: none;
-  border-radius: 10px;
-  display: inline-block;
-  color: var(--secondary-color);
-  padding: 10px 10px;
-}
-
-.btn:hover {
-  background-color: rgb(0, 0, 0);
-}
-
-.section-fondo {
-  background-color: var(--fondo);
-  border-radius: 30px;
-  width: 50vw;
-  padding: 40px;
-  text-align: center;
-}
-
-.section-fondo2 {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
 
   article {
-    background-color: var(--fondo);
-    border-radius: 30px;
-    padding: 10px;
-
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #06605f; /* Fondo de artículo */
+    padding: 10px; /* Relleno interno */
+    text-align: center; /* Alineación de texto */
+    width: 95%; /* Ancho del 95% */
+    
+    /* Estilos para las listas dentro de article */
     ul {
-      list-style: none;
-      padding: 0%;
+      font-size: medium; /* Tamaño de la fuente */
     }
   }
 }
 
-.formacion {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+/* Estilos para el título general */
+.title {
+  font-family: "Share Tech", sans-serif; /* Fuente para el título */
+  font-weight: 400; /* Peso de la fuente */
+  text-align: center; /* Alineación del texto */
+  color: var(--primary-color); /* Color del texto */
+  margin: 0; /* Elimina márgenes */
+}
 
-  section {
-    background-color: var(--fondo);
-    border-radius: 30px;
-    text-align: center;
-    padding: 25px;
-  }
-  .academica {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .complementaria {
-    grid-area: 1 / 2 / 2 / 3;
+/* Estilos para los botones */
+.btn {
+  background-color: var(--primary-color); /* Fondo del botón */
+  text-decoration: none; /* Elimina el subrayado */
+  border-radius: 10px; /* Bordes redondeados */
+  display: inline-block; /* El botón es un bloque en línea */
+  color: var(--secondary-color); /* Color del texto */
+  padding: 10px 10px; /* Relleno interno */
+}
+
+/* Efecto de hover en los botones */
+.btn:hover {
+  background-color: rgb(0, 0, 0); /* Fondo cambia a negro cuando se pasa el ratón */
+}
+
+/* Estilos para las secciones con fondo */
+.section-fondo {
+  background-color: var(--fondo); /* Fondo personalizado */
+  border-radius: 30px; /* Bordes redondeados */
+  width: 50vw; /* Ancho del 50% de la ventana */
+  padding: 40px; /* Relleno interno */
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para una sección con flexbox */
+.section-fondo2 {
+  text-align: center; /* Alineación del texto */
+  display: flex; /* Flexbox para organizar los elementos */
+  flex-direction: column; /* Los elementos se colocan en columna */
+  justify-content: center; /* Centra los elementos */
+  gap: 1rem; /* Espacio entre los elementos */
+
+  article {
+    background-color: var(--fondo); /* Fondo personalizado */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px; /* Relleno interno */
+
+    ul {
+      list-style: none; /* Elimina las viñetas */
+      padding: 0%; /* Elimina el padding */
+    }
   }
 }
+/* Estilos para la clase .formacion */
+.formacion {
+  display: grid; /* Usamos grid para organizar el contenido */
+  grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de igual tamaño */
+  grid-template-rows: 1fr; /* Define 1 fila de tamaño flexible */
+  grid-column-gap: 30px; /* Espacio horizontal entre las columnas */
+  grid-row-gap: 30px; /* Espacio vertical entre las filas */
+
+  /* Estilos para las secciones dentro de .formacion */
+  section {
+    background-color: var(--fondo); /* Fondo con el color definido en las variables */
+    border-radius: 30px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    padding: 25px; /* Relleno interno de 25px */
+  }
+
+  /* Posicionamiento específico para la sección con clase .academica */
+  .academica {
+    grid-area: 1 / 1 / 2 / 2; /* Ocupa la primera columna y la primera fila */
+  }
+
+  /* Posicionamiento específico para la sección con clase .complementaria */
+  .complementaria {
+    grid-area: 1 / 2 / 2 / 3; /* Ocupa la segunda columna y la primera fila */
+  }
+}
+
+
+
+
+
+
+
+

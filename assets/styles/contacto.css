@@ -1,36 +1,41 @@
-:root {
-  --primary-color: #f3f3f3;
-  --secondary-color: #77c0a0;
-  --background-color: #436169;
-  --fondo: #44585d;
+/* Definición de variables de colores globales */
+:root { 
+  --primary-color: #f3f3f3; /* Color primario: un tono claro de gris */
+  --secondary-color: #77c0a0; /* Color secundario: un verde suave */
+  --background-color: #436169; /* Color de fondo: un verde oscuro */
+  --fondo: #44585d; /* Color de fondo alternativo: verde azulado oscuro */
 }
 
+/* Estilo para el contenedor principal de contactos */
 .main-contactos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--fondo);
-  border-radius: 10px;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex; /* Se usa Flexbox para organizar los elementos */
+  flex-direction: column; /* Los elementos se organizan en columna */
+  align-items: center; /* Se centran los elementos horizontalmente */
+  background-color: var(--fondo); /* Se aplica el color de fondo definido en la variable */
+  border-radius: 10px; /* Bordes redondeados con un radio de 10px */
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Se establece la fuente para el texto */
 }
 
+/* Estilo para los enlaces */
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+  text-decoration: none; /* Se elimina el subrayado por defecto de los enlaces */
+  color: var(--primary-color); /* El color del enlace es el color primario */
 }
 
+/* Estilos para el formulario */
 form {
-  background-color: #67969c;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+  background-color: #67969c; /* Se asigna un color de fondo gris azulado al formulario */
+  border-radius: 10px; /* Bordes redondeados de 10px */
+  padding: 10px; /* Relleno interno de 10px */
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fuente para el formulario */
+  
+  /* Estilos para los fieldsets dentro del formulario */
   fieldset {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    border-color: var(--fondo);
+    display: flex; /* Usamos Flexbox para organizar el contenido dentro del fieldset */
+    flex-direction: column; /* Los elementos se organizan en una columna */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    border-color: var(--fondo); /* El color del borde se toma de la variable --fondo */
   }
 }
