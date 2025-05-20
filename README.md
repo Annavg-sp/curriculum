@@ -1,2 +1,3 @@
 # curriculum
-Pagina sobre
+Pagina tipo portfolio
+
