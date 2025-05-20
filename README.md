@@ -1,3 +1,0 @@
-# curriculum
-Pagina tipo portfolio
-
